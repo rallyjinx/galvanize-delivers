@@ -1,0 +1,61 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+
+#index-banner {
+  background-image: url("../img/hero.jpg");
+}
+.icon-block {
+  text-align: left;
+}
+p > a {
+  color: #fff;
+}
+
+.menu-item {
+  width: 35%;
+  box-shadow: 10px 10px 5px #888888;
+
+}
+
+.order-button {
+  width: 100%;
+
+}
+
+.card .card-title {
+ font-size: 1.7vw;
+}
+
+@media only screen and (max-width: 992px) {
+ .card .card-title {
+   font-size: 3vw;
+ }
+}
+
+@media only screen and (max-width: 600px) {
+ .card .card-title {
+   font-size: 4.5vw;
+ }
+}
+
+table {
+  width: 30%;
+
+}
+
+.order {
+  width: 30%;
+}
