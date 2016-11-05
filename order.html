@@ -12,167 +12,188 @@
 </head>
 <body>
   <nav class="blue darken-3" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Galvanize Delivers</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Galvanize Delivers</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Order Delivery</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Order Delivery</a></li>
+        <li><a href="order.html">Order Delivery</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 <!-- ******************************************* -->
-  <div class="section no-pad-bot">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m7">Menu></div>
-        <div class="col s12 m5">Order</div>
-      </div>
-      <section class="row">
-      <div class="card col s4">
-        <img src="img/burger.jpg">
-        <div class="card-title">
-          <h5>Royale with Cheese</h5>
-          <h6>$8.99</h6>
+<div class="container clearfix">
+  <div class="section left">
+
+    <!--   Icon Section   -->
+
+    <!-- <div class="row"> -->
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/burger.jpg">
+            <span class="card-content">
+              <h5>Royale with Cheese</h5>
+              <h6>$8.99</h6>
+            </span>
+          </div>
+          <div class="card-action">
+            <button class="order-button pink-text" id="burger" value='8.99'>Add to Order</button>
+          </div>
         </div>
-        <button class="order-button pink-text" id="burger" value='8.99'>Add to Order</button>
       </div>
-
-      <div class="card col s4">
-        <img src="img/pizza.jpg">
-        <div class="card-title">
-          <h5>Arugula Pie</h5>
-          <h6>$11.99</h6>
+    <!-- </div> -->
+    <!-- <div class="row"> -->
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/pizza.jpg">
+            <span class="card-content">
+              <h5>Arugula Pie</h5>
+              <h6>$11.99</h6>
+            </span>
+          </div>
+          <div class="card-action">
+            <button class="order-button pink-text" id="pizza" value='11.99'>Add to Order</button>
+          </div>
         </div>
-        <button class="order-button pink-text" id="pizza" value='11.99'>Add to Order</button>
       </div>
+    <!-- </div> -->
+  </div>
 
-      <table>
-        <tr>
-          <th>Item</th>
-          <th>Quantity</th>
-          <th>Price</th>
-        </tr>
-        <tr>
-          <td>Royale with Cheese</td>
-          <td id="burger-qty"></td>
-          <td id="burger-prc"></td>
-        </tr>
-        <tr>
-          <td>Arugula Pie</td>
-          <td id="pizza-qty"></td>
-          <td id="pizza-prc"></td>
-        </tr>
-        <tr>
-          <td>Ice Cream Biscuit</td>
-          <td id="ic-qty"></td>
-          <td id="ic-prc"></td>
-        </tr>
-        <tr>
-          <td>Smoked Swine</td>
-          <td id="rib-qty"></td>
-          <td id="rib-prc"></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>Subtotal</td>
-          <td id="subtotal"></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>Tax</td>
-          <td id="tax"></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>Total</td>
-          <td id="total"></td>
-        </tr>
-      </table>
-    </section>
+  <div class="section right">
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Royale with Cheese</td>
+        <td id="burger-qty"></td>
+        <td id="burger-prc"></td>
+      </tr>
+      <tr>
+        <td>Arugula Pie</td>
+        <td id="pizza-qty"></td>
+        <td id="pizza-prc"></td>
+      </tr>
+      <tr>
+        <td>Ice Cream Biscuit</td>
+        <td id="ic-qty"></td>
+        <td id="ic-prc"></td>
+      </tr>
+      <tr>
+        <td>Smoked Swine</td>
+        <td id="rib-qty"></td>
+        <td id="rib-prc"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Subtotal</td>
+        <td id="subtotal"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Tax</td>
+        <td id="tax"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Total</td>
+        <td id="total"></td>
+      </tr>
+    </table>
+</div>
+    <div class="section left">
 
-    <section class="row">
-      <div class="card col s4">
-        <img src="img/ice_cream.jpg">
-        <div class="card-title">
-          <h5>Ice Cream Biscuit</h5>
-          <h6>$7.99</h6>
+      <!--   Icon Section   -->
+
+      <!-- <div class="row"> -->
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/ice_cream.jpg">
+              <span class="card-content">
+                <h5>Ice Cream Biscuit</h5>
+                <h6>$7.99</h6>
+              </span>
+            </div>
+            <div class="card-action">
+              <button class="order-button pink-text" id="ice-cream" value='7.99'>Add to Order</button>
+            </div>
+          </div>
         </div>
-        <button class="order-button pink-text" id="ice-cream" value='7.99'>Add to Order</button>
-      </div>
-
-      <div class="card col s4">
-        <img src="img/ribs.jpg">
-        <div class="card-title">
-          <h5>Smoked Swine</h5>
-          <h6>$14.99</h6>
+      <!-- </div> -->
+      <!-- <div class="row"> -->
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/ribs.jpg">
+              <span class="card-content">
+                <h5>Smoked Swine</h5>
+                <h6>$14.99</h6>
+              </span>
+            </div>
+            <div class="card-action">
+              <button class="order-button pink-text" id="ribs" value='14.99'>Add to Order</button>
+            </div>
+          </div>
         </div>
-        <button class="order-button pink-text" id="ribs" value='14.99'>Add to Order</button>
-      </div>
-
+      <!-- </div> -->
+    </div>
+    <div class="section right">
       <form id="order-info" class="order">
         <label for="name">Name</label>
-        <input type="text" name="name">
+        <input type="text" name="name" required>
         <label for="phone">Phone</label>
-        <input type="tel" name="phone">
+        <input type="tel" name="phone" required>
         <label for="address">Address</label>
-        <input type="text" name="address">
+        <input type="text" name="address" required>
         <button type="submit" id="submit" value="Place Order" class="btn-large waves-effect waves-light pink">Place Order</button>
       </form>
-    </section>
-
-    <!-- <section class="row">
-      <div class="order-form col s4">
-
     </div>
-    moved table from here to first row
-    moved order form from here to second row
 
-  </section> -->
-
-    <br><br>
-
-
-  </div>
 </div>
 <!-- ******************************************* -->
-  <footer class="page-footer blue darken-3">
+<footer class="page-footer blue darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Galvanize Delivers</h5>
+        <p class="grey-text text-lighten-4">Penguin sweaters, delivered.</p>
+
+
+      </div>
+      <div class="col l3 s12">
+
+        <!-- <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </ul> -->
+      </div>
+      <div class="col l3 s12">
+        <p><a href="/">Home</a></p>
+        <p><a href="order.html">Order Delivery</a></p>
+        <!-- <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </ul> -->
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
+    Made by <a class="orange-text text-lighten-3" href="http://www.amusingplanet.com/2013/10/pygmy-marmoset-smallest-monkey.html">tiny monkeys</a>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 
 
   <!--  Scripts-->

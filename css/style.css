@@ -13,13 +13,13 @@
 	font-size: inherit;
 }
 
-
 #index-banner {
   background-image: url("../img/hero.jpg");
 }
 .icon-block {
   text-align: left;
 }
+
 p > a {
   color: #fff;
 }
@@ -51,11 +51,37 @@ p > a {
  }
 }
 
-table {
-  width: 30%;
-
+.order {
+  justify-content: center;
 }
 
-.order {
-  width: 30%;
+.btn-large {
+
+}
+table {
+  float: left;
+}
+.left {
+  width: 55%;
+  float: left;
+}
+
+.right {
+  width: 45%;
+  float: left;
+}
+
+.card {
+  width: 45%;
+  float: left;
+  margin: 10px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
