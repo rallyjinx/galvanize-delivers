@@ -62,3 +62,24 @@ $('.order-button').on('click', function() {
   $('#total').append(total.toFixed(2  ));
   quantity(this.id, this.value);
 });
+
+
+$('#submit').on('click', function(event) {
+  if (total === 0) {
+    Materialize.toast('Error. Please fill out all fields.', 5000);
+    event.preventDefault();
+  } else if ( $('.form-name')[0].checkValidity() === false ) {
+
+    Materialize.toast('Error. Please enter name.', 5000);
+    event.preventDefault();
+  } else if ( $('.form-tel')[0].checkValidity() === false ) {
+    Materialize.toast('Error. Please enter phone number.', 5000);
+    event.preventDefault();
+  } else if ($('.form-ady')[0].checkValidity() === false ) {
+    Materialize.toast('Error. Please enter address', 5000);
+    event.preventDefault();
+  }
+  else {
+    Materialize.toast('Success. Order Placed.', 10000);
+  }
+});
